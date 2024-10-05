@@ -10,7 +10,133 @@ body {
     color: #ffffff;
 }
 
-/* Feature Section */
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav a:hover {
+    color: #ff9800;
+}
+
+.cta-buttons a {
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-left: 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+.login-btn:hover {
+    background-color: #444;
+}
+
+.signup-btn {
+    background-color: #ff9800;
+    color: #000;
+    border: none;
+}
+
+.signup-btn:hover {
+    background-color: #e68a00;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('your-background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text contrast */
+    border-radius: 10px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-primary, .cta-secondary {
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-primary {
+    background-color: #ff9800;
+    color: #000000;
+}
+
+.cta-primary:hover {
+    background-color: #e68a00;
+}
+
+.cta-secondary {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.cta-secondary:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Features Section */
 .features {
     padding: 50px 20px;
     background-color: #1f1f1f;
@@ -60,14 +186,120 @@ body {
 }
 
 .feature-item p {
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1f1f1f;
+    color: #cccccc;
+    padding: 40px 20px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.footer-column p, 
+.footer-column a {
     font-size: 1rem;
     color: #cccccc;
     line-height: 1.6;
 }
 
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-column ul li a:hover {
+    color: #ff9800;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    padding: 10px;
+    background-color: #ff9800;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #e68a00;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ff9800;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .feature-grid {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .footer-columns {
         grid-template-columns: 1fr;
     }
 }
